@@ -15,28 +15,23 @@ class Validator extends Component {
     this.setState({
       passwordInput: e.target.value
     })
-    console.log(e.target.value)
   }
 
   handleConfirmPassword(e) {
     this.setState({
       confirmPasswordInput: e.target.value
     })
-    console.log(e.target.value)
   }
 
   handlePasswordInputChange(e) {
-      console.log('Submit!')
       if (this.state.passwordInput === this.state.confirmPasswordInput) {
         this.setState({
           passwordsMatch: true
         })
-        console.log(this.state.passwordsMatch)
       } else {
         this.setState({
           passwordsMatch: false
         })
-        console.log(this.state.passwordsMatch)
       }
   }
 
